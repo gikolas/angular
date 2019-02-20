@@ -39,7 +39,7 @@ mainState = 'fadeIn';
 clk(){
 
   let number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-  if (number > 100) {
+  if (number > 10) {
     this.mainState = "fadeOut";
 
     

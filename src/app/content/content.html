@@ -1,7 +1,7 @@
 <div class="containers">
     <div class="container">
     <div class="row">
-            <div class="col-sm-5" style="margin-top:200px">
+            <div class="col-sm-5" [style.marginTop.px]="200">
     <textsApp></textsApp>
 </div>
     <div
@@ -16,11 +16,10 @@
             <div class="col-sm-4"
             [ngStyle]="LoanStyle"></div>
            <div class="col-sm-5" 
-           style="margin-left:250px;
-          ">
-<h3>Personal finance that fits you</h3>
+           [style.marginLeft.px]="250">
+<h3>{{imgUrls.h3}}</h3>
 <div>
-    <p>We believe financially responsible people deserve better financial options. That’s why we’re blending insightful data science, elegant design, and personalized service to build lifelong relationships with our clients.</p>
+    <p>{{imgUrls.paragraph}}</p>
 </div>
 <a href="#" class="read_more">READ MORE  <i class="fa fa-arrow-circle-right"></i></a>
            </div>
