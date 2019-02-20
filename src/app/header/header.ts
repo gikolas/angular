@@ -32,6 +32,9 @@ import { state,trigger,style,transition, animate } from '@angular/animations';
 ] 
 })
 export class header implements OnInit  {
+
+  pHeader : string;
+  pDescription:string;
    logoname:object;
   constructor(private headerService:headerService){}
 rowClass =false;
@@ -52,6 +55,8 @@ clk(){
  
 
 ngOnInit(){
+  this.pHeader = 'Welcome to a better way to borrow.';
+  this.pDescription=" We’re using unrivaled service and technology to bring low-interest loans to high-potential people. Like you.";
   this.logoname = this.headerService.getLogoName();
 
 

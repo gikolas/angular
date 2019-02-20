@@ -12,7 +12,7 @@ export class footer {
     footerTexts = footerTexts;
 
     ngOnInit(){
-        console.log(footerTexts[0].submenuText.subtexts)
+     
     }
  
 }

@@ -10,6 +10,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { HttpClientModule } from "@angular/common/http";
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {footerModule} from './footer/footermodule';
+import {modalModule} from './modal/modalmodule';
 @NgModule({
   declarations: [
     AppComponent
@@ -23,7 +24,8 @@ import {footerModule} from './footer/footermodule';
     contentModule,
     HttpClientModule,
     AngularFontAwesomeModule,
-    footerModule
+    footerModule,
+    modalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
