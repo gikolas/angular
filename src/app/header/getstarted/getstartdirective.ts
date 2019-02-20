@@ -1,6 +1,6 @@
 import {Directive,HostListener,HostBinding} from '@angular/core';
 @Directive({
-    selector :'[getsrat]'
+    selector :'[getstart]'
 })
 
 export class getstartDirective{
