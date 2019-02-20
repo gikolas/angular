@@ -1,0 +1,17 @@
+.signin{
+    border-radius: 2px;
+    transition: all .25s;
+float: right;
+    height: 32px;
+    padding: 0 25px;
+ background:none;
+    color: #fff;
+    text-align: center!important;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left:10px;
+    border:1px solid white
+}
+.signin:hover{
+    border:1px solid #1bb580
+}

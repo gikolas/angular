@@ -1,0 +1,28 @@
+
+
+.containers {
+width:1500px;
+margin: 0 auto;
+    background: #fff;
+    background: url("https://s17664.pcdn.co/wp-content/uploads/mphp-photo-hero-above-cta-min.jpg");
+height:500px;
+background-repeat: no-repeat;
+margin-top:-50px;
+
+}
+
+.row{
+    position: fixed;
+    z-index: 100;
+
+}
+
+.rowWhite{
+    position: fixed;
+    z-index: 100;
+   background: rgb(34, 32, 32);
+
+   width:1500px;
+   margin: 0 auto;
+
+}

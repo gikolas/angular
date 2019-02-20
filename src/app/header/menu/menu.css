@@ -1,0 +1,47 @@
+#mainUl{
+    margin-left:0px;
+  z-index: 100;
+
+}
+#mainUl li {
+    display: inline;
+   margin:12px 12px;
+
+}
+
+#mainUl li a{
+    text-decoration: none;
+    color:white;
+  
+}
+.submenu {
+    display: none;
+    z-index: 10
+}
+#submenu {
+    position: absolute;
+    border: 0px solid black;
+    width:300px;
+background-color: white;
+margin-top:25px;
+box-shadow: 0px 7px 0px 0px rgb(233, 226, 233);
+margin-left:-45px;
+z-index: 10
+
+}
+#submenu li {
+    display: block;
+  
+}
+#submenu li a {
+    color:#6094a0;
+    padding:0;
+ margin:0;
+
+}
+#submenu li a:hover {color:black;cursor: pointer}
+.menu {
+    width:900px;
+
+    
+}
