@@ -54,6 +54,9 @@
     color: #9c9ea1;
     text-decoration: none;
 }
+.sub-menu li a:hover {
+    color:black
+}
 .sub-menu li {
     list-style-type: none;
     margin-top: 10px;
@@ -66,6 +69,11 @@
     padding-left: 24px;
     vertical-align: top;
     box-sizing: border-box;
+    opacity: 0.5;
+    transition: opacity 250ms ease;
+}
+#lefter:hover {
+    opacity: 1;
 }
 
 .press-block a img {

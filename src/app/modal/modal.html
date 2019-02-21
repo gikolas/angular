@@ -1,6 +1,10 @@
-<div [class.hide]="ModalStatus">
+<div 
+
+[class.hide]="ModalStatus"
+ >
 <div class="myModal">
-    <div class="myModalDiv">
+    <div class="myModalDiv"
+    [@modalShow]="firstState">
 <div class="myModalHeader">
 <h5>Which product are you interested in?</h5>
 </div>
