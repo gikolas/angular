@@ -8,7 +8,7 @@ styleUrls: ['./modal.css'],
 animations:[
     trigger('modalShow',[
         state('showModal',style({
-            opacity:0.1,
+            opacity:0,
             transform: 'scale(0.4)'
         })),
         state('hideModal',style({
@@ -32,10 +32,13 @@ export class modal {
     }
     ModalStatus : boolean=true;
     closeModal(){
-
-       
+        this.firstState = 'showModal';
+       setTimeout(() => {
+        
         this.modalService.emitCloseButton(true);
-    
+       
+       }, 300);
+   
        
     }
 
