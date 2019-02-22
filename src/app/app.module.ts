@@ -11,9 +11,21 @@ import { HttpClientModule } from "@angular/common/http";
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {footerModule} from './footer/footermodule';
 import {modalModule} from './modal/modalmodule';
+import { CredicardLoanComponent } from './credicard-loan/credicard-loan.component';
+import { EngagementLoanComponent } from './engagement-loan/engagement-loan.component';
+import { ImprovementLoanComponent } from './improvement-loan/improvement-loan.component';
+import { MedicalLoanComponent } from './medical-loan/medical-loan.component';
+import { MovingLoanComponent } from './moving-loan/moving-loan.component';
+import {RouterSharedModule} from './routermodule';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    //CredicardLoanComponent,
+    EngagementLoanComponent,
+    ImprovementLoanComponent,
+    MedicalLoanComponent,
+    MovingLoanComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +37,9 @@ import {modalModule} from './modal/modalmodule';
     HttpClientModule,
     AngularFontAwesomeModule,
     footerModule,
-    modalModule
+    modalModule,
+    RouterSharedModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
