@@ -4,7 +4,7 @@ import  {FormControl,FormGroup} from '@angular/forms';
 import {containerList} from './containerList';
 
 @Component({
-selector :'containerloans',
+selector :'containerloansApp',
 templateUrl:'./containerloans.html',
 styleUrls:['./containerloans.css']
 })

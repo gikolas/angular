@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule,Routes} from '@angular/router';
-import {CredicardLoanComponent} from './credicard-loan.component';
-
+import {CredicardLoanComponent} from './creditcard-loan.component';
 const rt : Routes = [
   {
     path:'',
