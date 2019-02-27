@@ -23,8 +23,8 @@ import {mainContent} from './main-content/main-content';
   declarations: [
     AppComponent,
     //CredicardLoanComponent,
-    EngagementLoanComponent,
-    ImprovementLoanComponent,
+   // EngagementLoanComponent,
+    //ImprovementLoanComponent,
     MedicalLoanComponent,
     MovingLoanComponent,
     mainContent

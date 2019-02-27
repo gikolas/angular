@@ -15,6 +15,17 @@ const routes: Routes = [
   },
 
   {
+    path: 'engagement',
+    loadChildren: './engagement-loan/engagement-loan.module#engagementModule',
+
+  },
+  {
+    path: 'improvement',
+    loadChildren: './improvement-loan/improvement-loan.module#improvementModule',
+
+  },
+
+  {
     path: '**',
     component : mainContent
   }
