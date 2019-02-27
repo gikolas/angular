@@ -1,4 +1,4 @@
-.logo {
+.logo  {
     color:#fff;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -11,5 +11,15 @@
     width: 96px;
     margin-top:15px;
     cursor: pointer;
+
+    
+}
+
+.logo a  {
+    color:#fff;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration: none;
+
     
 }

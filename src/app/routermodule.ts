@@ -9,7 +9,7 @@ const routes: Routes = [
     //loadChildren :'./main-content/main-contentroutermodule#maincrmodule'
   },
   {
-    path: 'comp1',
+    path: 'credit-card',
     loadChildren: './creditcard-loan/creditcard-loan.module#credCardModule',
 
   },
@@ -23,6 +23,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+
     RouterModule.forRoot(routes)
   ],
   declarations: [],

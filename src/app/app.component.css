@@ -2,3 +2,13 @@ body{
     background-color: pink;
 }
 
+.containers {
+ 
+    width:auto;
+ display: block;
+
+}
+
+.containers-router{
+   min-height:200px;
+}

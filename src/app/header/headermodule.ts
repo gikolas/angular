@@ -9,6 +9,8 @@ import {getstart} from '../header/getstarted/getstart';
 import {getstartDirective} from '../header/getstarted/getstartdirective';
 import {signin} from '../header/signin/signin';
 import {menuDirective} from './menudirective';
+import { CommonModule } from '@angular/common';
+import {RouterModule,Routes} from '@angular/router';
 @NgModule({
 declarations : [
     logo,
@@ -28,7 +30,8 @@ exports : [
     getstart,
     getstartDirective,
     signin,
-    menuDirective]
+    menuDirective],
+    imports:[CommonModule,RouterModule]
 })
 
 export class headerModule{
