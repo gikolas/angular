@@ -24,11 +24,42 @@ const routes: Routes = [
     loadChildren: './improvement-loan/improvement-loan.module#improvementModule',
 
   },
+  {
+    path: 'moving',
+    loadChildren: './moving-loan/moving-loan.module#movingModule',
 
+  },
+  {
+    path: 'medical',
+    loadChildren: './medical-loan/medical-loan.module#medicalModule',
+
+  },
+
+  {
+    path: 'refinance',
+    loadChildren: './refinance-loan/refinance-loan.module#refinanceModule',
+
+  },
+  {
+    path: 'review',
+    loadChildren: './review/review.module#reviewModule',
+
+  },
+  {
+    path: 'blog',
+    loadChildren: './blog/blog.module#blogModule',
+
+  },
+  
   {
     path: '**',
     component : mainContent
-  }
+  },
+
+
+  
+
+  
 
 ];
 

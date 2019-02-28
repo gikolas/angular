@@ -18,6 +18,9 @@ import { MedicalLoanComponent } from './medical-loan/medical-loan.component';
 import { MovingLoanComponent } from './moving-loan/moving-loan.component';
 import {RouterSharedModule} from './routermodule';
 import {mainContent} from './main-content/main-content';
+import { RefinanceLoanComponent } from './refinance-loan/refinance-loan.component';
+import { ReviewComponent } from './review/review.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +28,12 @@ import {mainContent} from './main-content/main-content';
     //CredicardLoanComponent,
    // EngagementLoanComponent,
     //ImprovementLoanComponent,
-    MedicalLoanComponent,
-    MovingLoanComponent,
-    mainContent
+    //MedicalLoanComponent,
+   // MovingLoanComponent,
+    mainContent,
+    //BlogComponent,
+   // ReviewComponent,
+   // RefinanceLoanComponent
   ],
   imports: [
     BrowserModule,
