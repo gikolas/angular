@@ -24,13 +24,12 @@
 
 
 .navbar-navs{
-
-    flex-direction: column;
+    display: flex;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
   z-index: 100;
-  margin-top:10px
+
 
 }
 .navbar-navs li {

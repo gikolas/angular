@@ -18,8 +18,7 @@ import { services } from '../services';
     opacity:1,
     position: "fixed",
 
-   background: "rgb(34, 32, 32)",
-
+   background: "rgb(116, 155, 167)",
    width:"1500px",
    margin: "0 auto"
 
@@ -67,11 +66,13 @@ clk(){
 
  
 pageNimation='opacityOn';
+className = 'jumbotron';
 headerImageName : any;
 ngOnInit(){
   this.headerImageName = 'url(assets/mphp-photo-hero-above-cta-min.jpg)';
-  this.myservice.Mysubject.subscribe((data)=>{
-    this.headerImageName = data;
+  this.myservice.Mysubject.subscribe((data:string)=>{
+    this.headerImageName = data.data;
+    this.className = data.texts;
           })
 
   setTimeout(() => {

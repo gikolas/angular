@@ -1,7 +1,7 @@
 <div class="containers"
 [@pageOpacity]="pageNimation"
 [style.backgroundImage]="headerImageName"
-
+[style.backgroundSize.%]="headerImageName==='url(assets/paint.jpg)' ? '90' : '100'"
 >
 
 
@@ -24,8 +24,7 @@
        
     </div>
 </div>
-<div class="jumbotron" style="background: none;color:white;text-align: center;
-margin-top:50px">
+<div [ngClass]="className" >
     <h1>{{pHeader}}</h1>
     <div>
        {{pDescription}}

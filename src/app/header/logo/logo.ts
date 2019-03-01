@@ -12,7 +12,7 @@ export class logo {
     mainImage = 'url(assets/mphp-photo-hero.jpg)';
     className = 'navbar-nav';
     changeMain(){
-        this.myservice.changeHeaderImage(this.mainImage);
+        this.myservice.changeHeaderImage(this.mainImage,'jumbotron','navbar-nav');
         this.className = 'navbar-nav';
        }
 @Input('logo') logo : string;

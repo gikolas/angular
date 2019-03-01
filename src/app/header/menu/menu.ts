@@ -57,38 +57,48 @@ blogImage = 'url(assets/WeddingHero.png)';
 className = 'navbar-nav';
      constructor(private myservice:services){}
      changeImage(){
-      this.myservice.changeHeaderImage(this.imageName);
+      this.myservice.changeHeaderImage(this.imageName,'jumbotrons','navbar-navs');
 this.className = 'navbar-navs';
      }
 
      changeImageCreditCard(){
-      this.myservice.changeHeaderImage(this.creditImage);
-
+      this.myservice.changeHeaderImage(this.creditImage,'jumbotrons','navbar-navs');
+      this.className = 'navbar-navs';
      }
 
      changeImageEngagement(){
-      this.myservice.changeHeaderImage(this.engagementImage);
+      this.myservice.changeHeaderImage(this.engagementImage,'jumbotron','navbar-nav');
+      this.className = 'navbar-nav';
      }
 
      changeImageHome(){
-      this.myservice.changeHeaderImage(this.homeImage);
+      this.myservice.changeHeaderImage(this.homeImage,'jumbotron','navbar-nav');
+      this.className = 'navbar-nav';
      }
 
      changeImageMedical(){
-      this.myservice.changeHeaderImage(this.medicalImage);
+      this.myservice.changeHeaderImage(this.medicalImage,'jumbotron','navbar-nav');
+      this.className = 'navbar-nav';
      }
      changeImageMoving(){
-      this.myservice.changeHeaderImage(this.movingImage);
+      this.myservice.changeHeaderImage(this.movingImage,'jumbotrons', 'navbar-navs');
+      this.className = 'navbar-navs';
      }
 
      changeImageReview(){
-      this.myservice.changeHeaderImage(this.reviewImage);
+      this.myservice.changeHeaderImage(this.reviewImage,'jumbotrons','navbar-navs');
+      this.className = 'navbar-navs';
      }
 
      changeImageBlog(){
-      this.myservice.changeHeaderImage(this.blogImage);
+      this.myservice.changeHeaderImage(this.blogImage,'jumbotron','navbar-nav');
+      this.className = 'navbar-nav';
      }
-
+ngOnInit(){
+this.myservice.Mysubject.subscribe((data)=>{
+this.className = data.className;
+})
+}
      
 
 }
