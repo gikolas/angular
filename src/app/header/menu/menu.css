@@ -1,23 +1,62 @@
-#mainUl{
+
+.navbar-nav {
     margin-left:0px;
   z-index: 100;
 
 }
-#mainUl li {
+
+.navbar-nav  li {
     display: inline;
    margin:12px 12px;
 
 }
 
-#mainUl li a{
+.navbar-nav  li a{
     text-decoration: none;
     color:white;
     transition: color 250ms ease;
   
 }
-#mainUl li a:hover{
+
+
+
+
+
+
+.navbar-navs{
+
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  z-index: 100;
+  margin-top:10px
+
+}
+.navbar-navs li {
+    display: inline;
+   margin:12px 12px;
+
+}
+
+
+
+.navbar-navs li a{
+    text-decoration: none;
+    color:black;
+    transition: color 250ms ease;
+  
+}
+
+
+.navbar-nav  li a:hover{
     color:#7cf0c7
 }
+
+.navbar-navs li a:hover{
+    color:#7cf0c7
+}
+
 .submenu {
     display: none;
     z-index: 10

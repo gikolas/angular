@@ -1,6 +1,7 @@
 import {Component,OnInit} from '@angular/core';
 import {headerService} from './headerservice';
 import { state,trigger,style,transition, animate } from '@angular/animations';
+import { services } from '../services';
 @Component({
   selector : 'headerApp',
  templateUrl : './header.html',
@@ -28,7 +29,19 @@ import { state,trigger,style,transition, animate } from '@angular/animations';
         animate('0.5s')
       ]),
   
+]),
+
+trigger('pageOpacity',[
+  state('opacityOn',style({
+    opacity:'0.2'
+  })),
+  state('opacityOot',style({
+    opacity:'1'
+  })),
+transition("opacityOn=>opacityOot",[animate('0.5s')])
 ])
+
+
 ] 
 })
 export class header implements OnInit  {
@@ -36,7 +49,7 @@ export class header implements OnInit  {
   pHeader : string;
   pDescription:string;
    logoname:object;
-  constructor(private headerService:headerService){}
+  constructor(private headerService:headerService,private myservice:services){}
 rowClass =false;
 mainState = 'fadeIn';
 clk(){
@@ -53,8 +66,19 @@ clk(){
 }
 
  
-
+pageNimation='opacityOn';
+headerImageName : any;
 ngOnInit(){
+  this.headerImageName = 'url(assets/mphp-photo-hero-above-cta-min.jpg)';
+  this.myservice.Mysubject.subscribe((data)=>{
+    this.headerImageName = data;
+          })
+
+  setTimeout(() => {
+    this.pageNimation = 'opacityOot';
+  }, 2);
+
+
   this.pHeader = 'Welcome to a better way to borrow.';
   this.pDescription=" We’re using unrivaled service and technology to bring low-interest loans to high-potential people. Like you.";
   this.logoname = this.headerService.getLogoName();

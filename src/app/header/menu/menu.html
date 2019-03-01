@@ -1,8 +1,8 @@
 <div class="menu">
         <nav class="navbar navbar-expand-lg">
-  <ul id="mainUl" class="navbar-nav">
+  <ul  [ngClass]="className" >
       <li>
-          <a routerLink="refinance">Refinance Student Loan</a>
+          <a routerLink="refinance" (click)="changeImage()" >Refinance Student Loan</a>
       </li>
      
       <li>
@@ -17,11 +17,11 @@
         (mouseover)="show()" 
         (mouseout)="hides()">
         <li style="height:20px"></li>
-            <li><a routerLink='credit-card'>Credit Card Consolidation</a></li>
-            <li><a routerLink='engagement'>Engagement Ring Loans</a></li>
-            <li><a routerLink='improvement'>Home Improvement Loans</a></li>
-            <li><a routerLink='medical'>Medical Loans</a></li>
-            <li><a routerLink='moving'>Moving Loans</a></li>
+            <li><a routerLink='credit-card' (click)="changeImageCreditCard()" >Credit Card Consolidation</a></li>
+            <li><a routerLink='engagement' (click)="changeImageEngagement()">Engagement Ring Loans</a></li>
+            <li><a routerLink='improvement' (click)="changeImageHome()">Home Improvement Loans</a></li>
+            <li><a routerLink='medical' (click)="changeImageMedical()">Medical Loans</a></li>
+            <li><a routerLink='moving' (click)="changeImageMoving()">Moving Loans</a></li>
            <!-- <li><a>Vacation Loans</a></li>
             <li><a>Wedding Loans</a></li>-->
         </ul>
@@ -34,10 +34,10 @@
         <a href="#">Help</a>
     </li>-->
     <li>
-        <a routerLink="review">Reviews</a>
+        <a routerLink="review" (click)="changeImageReview()">Reviews</a>
     </li>
     <li>
-        <a routerLink="blog">Blog</a>
+        <a routerLink="blog" (click)="changeImageBlog()">Blog</a>
     </li>
 
 

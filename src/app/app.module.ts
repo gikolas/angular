@@ -21,6 +21,7 @@ import {mainContent} from './main-content/main-content';
 import { RefinanceLoanComponent } from './refinance-loan/refinance-loan.component';
 import { ReviewComponent } from './review/review.component';
 import { BlogComponent } from './blog/blog.component';
+import {services} from './services';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { BlogComponent } from './blog/blog.component';
     RouterSharedModule
    
   ],
-  providers: [],
+  providers: [services],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

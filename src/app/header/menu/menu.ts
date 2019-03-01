@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import { trigger,state,style,transition,animate } from '@angular/animations';
+import {services} from '../../services';
 
 @Component({
     selector :'menuApp',
@@ -45,6 +46,49 @@ export class menu {
       this.tglmenu = 'out';
       this.param = false;
      }
- 
-  
+imageName = 'url(assets/slr-hero-1-min.jpg)';
+creditImage = 'url(assets/credit-card-bg.png)';
+engagementImage = 'url(assets/EngagementB.jpg)';
+homeImage = 'url(assets/paint.jpg)';
+medicalImage = 'url(assets/MedicalBG-1.jpg)';
+movingImage = 'url(assets/reloation-hero-bg.jpg)';
+reviewImage = 'url(assets/reviews-hero.png)';
+blogImage = 'url(assets/WeddingHero.png)';
+className = 'navbar-nav';
+     constructor(private myservice:services){}
+     changeImage(){
+      this.myservice.changeHeaderImage(this.imageName);
+this.className = 'navbar-navs';
+     }
+
+     changeImageCreditCard(){
+      this.myservice.changeHeaderImage(this.creditImage);
+
+     }
+
+     changeImageEngagement(){
+      this.myservice.changeHeaderImage(this.engagementImage);
+     }
+
+     changeImageHome(){
+      this.myservice.changeHeaderImage(this.homeImage);
+     }
+
+     changeImageMedical(){
+      this.myservice.changeHeaderImage(this.medicalImage);
+     }
+     changeImageMoving(){
+      this.myservice.changeHeaderImage(this.movingImage);
+     }
+
+     changeImageReview(){
+      this.myservice.changeHeaderImage(this.reviewImage);
+     }
+
+     changeImageBlog(){
+      this.myservice.changeHeaderImage(this.blogImage);
+     }
+
+     
+
 }
