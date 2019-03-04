@@ -22,7 +22,13 @@ import { RefinanceLoanComponent } from './refinance-loan/refinance-loan.componen
 import { ReviewComponent } from './review/review.component';
 import { BlogComponent } from './blog/blog.component';
 import {services} from './services';
-
+import { CheckRateComponent } from './check-rate/check-rate.component';
+import { ApplicationsComponent } from './applications/applications.component';
+import {firebaseModule} from './firebase/firebase.module';
+import {reducer} from './ngrx-store/reducer';
+import {StoreModule} from '@ngrx/store';
+import { ReactiveFormsModule } from '@angular/forms';
+import {pipeRates} from './check-rate/ratePipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +38,9 @@ import {services} from './services';
     //MedicalLoanComponent,
    // MovingLoanComponent,
     mainContent,
+    CheckRateComponent,
+    ApplicationsComponent,
+    pipeRates
     //BlogComponent,
    // ReviewComponent,
    // RefinanceLoanComponent
@@ -47,10 +56,16 @@ import {services} from './services';
     AngularFontAwesomeModule,
     footerModule,
     modalModule,
-    RouterSharedModule
+    RouterSharedModule,
+    firebaseModule,
+    StoreModule.forRoot({
+      someAction : reducer
+    }),
+    ReactiveFormsModule,
+
    
   ],
-  providers: [services],
+  providers: [services,pipeRates],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

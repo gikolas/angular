@@ -95,7 +95,7 @@ this.className = 'navbar-navs';
       this.className = 'navbar-nav';
      }
 ngOnInit(){
-this.myservice.Mysubject.subscribe((data)=>{
+this.myservice.Mysubject.subscribe((data:any)=>{
 this.className = data.className;
 })
 }

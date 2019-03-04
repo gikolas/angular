@@ -1,0 +1,21 @@
+<div class="containers">
+
+  <h4>Create Application</h4>
+ <form >
+   Email : <input type="email" class="form-control">
+Amount : <input type="text" class="form-control">
+Ccy : <select class="form-control">
+<option>GEL</option>
+<option>USD</option>
+</select>
+Year : <select class="form-control">
+<option>2</option>
+<option>4</option>
+<option>5</option>
+</select>
+Payment Day : <select class="form-control" >
+  <option *ngFor="let x of numbers"> {{x}}</option>
+  </select>
+<input type="submit" value="Create App" class="bt btn-primary">
+</form>
+</div>

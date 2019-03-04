@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule,Routes} from '@angular/router';
 import {mainContent} from './main-content/main-content';
+import {CheckRateComponent} from './check-rate/check-rate.component';
+import {ApplicationsComponent} from './applications/applications.component';
 const routes: Routes = [
   {
     path:'',
@@ -51,6 +53,18 @@ const routes: Routes = [
 
   },
   
+  {
+    path:'check/:name',
+    component : CheckRateComponent
+ 
+  },
+
+  {
+    path:'applications',
+    component : ApplicationsComponent
+ 
+  },
+
   {
     path: '**',
     component : mainContent

@@ -70,7 +70,7 @@ className = 'jumbotron';
 headerImageName : any;
 ngOnInit(){
   this.headerImageName = 'url(assets/mphp-photo-hero-above-cta-min.jpg)';
-  this.myservice.Mysubject.subscribe((data:string)=>{
+  this.myservice.Mysubject.subscribe((data:any)=>{
     this.headerImageName = data.data;
     this.className = data.texts;
           })
