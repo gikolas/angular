@@ -29,6 +29,7 @@ import {reducer} from './ngrx-store/reducer';
 import {StoreModule} from '@ngrx/store';
 import { ReactiveFormsModule } from '@angular/forms';
 import {pipeRates} from './check-rate/ratePipe';
+import { MyappComponent } from './myapp/myapp.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import {pipeRates} from './check-rate/ratePipe';
     mainContent,
     CheckRateComponent,
     ApplicationsComponent,
-    pipeRates
+    pipeRates,
+    //MyappComponent
     //BlogComponent,
    // ReviewComponent,
    // RefinanceLoanComponent

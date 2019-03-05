@@ -66,6 +66,10 @@ const routes: Routes = [
   },
 
   {
+path:'myApp',
+loadChildren:'./myapp/myapp.module#myappModule'
+  },
+  {
     path: '**',
     component : mainContent
   },

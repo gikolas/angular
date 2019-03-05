@@ -1,19 +1,19 @@
 <div class="containers">
 
   <h4>Create {{LoanType.name}} Application  </h4>
- <form >
-   Email : <input type="email" class="form-control">
-Amount : <input type="text" class="form-control">
-Ccy : <select class="form-control">
+ <form [formGroup]="createApp" (ngSubmit)="onSubmit()">
+   Email : <input type="email" class="form-control" formControlName = 'email'>
+Amount : <input type="text" class="form-control" formControlName = 'amount'>
+Ccy : <select class="form-control" formControlName = 'ccy'>
 <option>GEL</option>
 <option>USD</option>
 </select>
-Year : <select class="form-control">
+Year : <select class="form-control" formControlName = 'year'>
 <option>2</option>
 <option>4</option>
 <option>5</option>
 </select>
-Payment Day : <select class="form-control" >
+Payment Day : <select class="form-control" formControlName = 'paymentDay'>
   <option *ngFor="let x of numbers"> {{x}}</option>
   </select>
 <input type="submit" value="Create App" class="bt btn-primary">
