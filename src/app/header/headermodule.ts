@@ -11,6 +11,7 @@ import {signin} from '../header/signin/signin';
 import {menuDirective} from './menudirective';
 import { CommonModule } from '@angular/common';
 import {RouterModule,Routes} from '@angular/router';
+import {modalModule} from '../modal/modalmodule';
 @NgModule({
 declarations : [
     logo,
@@ -20,7 +21,8 @@ declarations : [
     getstart,
     getstartDirective,
     signin,
-    menuDirective],
+    menuDirective,
+    ],
 providers :[headerService],
 exports : [
     logo,
@@ -30,8 +32,9 @@ exports : [
     getstart,
     getstartDirective,
     signin,
-    menuDirective],
-    imports:[CommonModule,RouterModule]
+    menuDirective,
+    ],
+    imports:[CommonModule,RouterModule,modalModule]
 })
 
 export class headerModule{

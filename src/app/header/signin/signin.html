@@ -1,1 +1,37 @@
-<button class="signin">Sign In</button>
+<button class="signin" (click)="showModal()">Sign In</button>
+<div id="signinmoadl" [class.hide]="ModalStatus">
+        <i class="fa fa-times" (click)="closeModal()"></i>
+    <div class="row">
+        <div class="col-sm-6" style="text-align:right">
+<button (click)="SignIn()" class="btn btn-default" [class.setColors]="!setColor">Sign In</button>
+</div>
+<div class="col-sm-5" style="text-align:left">
+<button (click)="SignUp()" class="btn btn-default" [class.setColors]="setColor">Sign Up</button>
+</div>
+</div>
+                <modalnav>
+                        <ng-container *ngIf='!showSignUp'>
+                    <modalnavitem [header]="'Sign In'">
+                        <form>
+                           Email: <input type="email" class="form-control">
+                           Password: <input type="password" class="form-control">
+                           <input type="submit" value="Sign In" class="btn btn-primary">
+                        </form>
+                   </modalnavitem>
+                   </ng-container>
+              <ng-container *ngIf='showSignUp'>
+                  <modalnavitem [header]="'Sign Out'" >
+                        <form>
+                                Full Name: <input type="text" class="form-control">
+                                 Email: <input type="email" class="form-control">
+                                 Password: <input type="password" class="form-control">
+                                 Repeat Password: <input type="password" class="form-control">
+                                 <input type="submit" value="Sign Up" class="btn btn-primary">
+                              </form>
+                </modalnavitem>
+            </ng-container>
+
+    </modalnav>
+  
+    
+</div>

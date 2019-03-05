@@ -15,3 +15,47 @@ float: right;
 .signin:hover{
     border:1px solid #1bb580
 }
+
+#signinmoadl{
+    position: absolute;
+    border: 1px solid rgb(202, 191, 191);
+    width:300px;
+    height:360px;
+    background-color: white;
+    margin-top:40px;
+    margin-left:80px;
+    border-radius:8px
+}
+.row{
+    margin-top:-10px;
+}
+.row div{
+    text-align: center
+}
+
+form {
+    width:240px;
+    margin-left:20px
+}
+
+i {
+
+    margin-left:270px;
+width: 10px;
+    font-size: 20px;
+    color:rgb(75, 72, 72);
+    cursor: pointer !important;
+}
+
+.hide {
+    display:none
+}
+
+.btn-primary{
+    margin-top:10px
+}
+
+.setColors{
+    color:rgb(11, 21, 48);
+    background-color: rgba(209, 211, 198, 0.822)
+}

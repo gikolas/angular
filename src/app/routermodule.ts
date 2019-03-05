@@ -60,7 +60,7 @@ const routes: Routes = [
   },
 
   {
-    path:'applications',
+    path:'applications/:name',
     component : ApplicationsComponent
  
   },
