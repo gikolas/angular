@@ -1,3 +1,5 @@
-<h1 *ngFor="let x of masM">
-{{x[0][0].amount}}
+<h1 *ngFor="let x of masM; let i=index">
+{{x[0].amount}}<button (click)="deleteApp(i)">deleteapp</button>
+{{i}}
+
 </h1>

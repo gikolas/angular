@@ -33,8 +33,7 @@ LoanType:any;
       amount: this.createApp.controls.amount.value,
       application_type: this.LoanType.name,
       ccy: this.createApp.controls.ccy.value,
-      id: 123,
-      identifier: 'test@test.com',
+      identifier: 'guest@test.com',
       paymentDay: this.createApp.controls.paymentDay.value,
       year: this.createApp.controls.year.value,
   

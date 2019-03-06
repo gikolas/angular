@@ -15,13 +15,25 @@ myobg:Subscription;
 masM = [];
   ngOnInit() {
 
-   this.myobg =  this.firebaseService.getApps().subscribe((data)=>{
+  /* this.myobg =  this.firebaseService.getApps().subscribe((data)=>{
      this.masM = [Object.values(data)];
      console.log(this.masM);
 
-    })
+    })*/
+    this.myobg =  this.firebaseService.getApps().subscribe(
+      data=>{
+this.masM = data;
+  },
+  err=>{
+      console.log('error');
+  }
+);
 
+}
 
-
+deleteApp(index:number){
+/*this.firebaseService.removeApp(index).subscribe((data)=>{
+  console.log(data);
+})*/
 }
 }
