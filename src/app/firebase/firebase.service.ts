@@ -48,6 +48,6 @@ return this.dataApp;
     )
 }
 removeApp(index:number){
-return this.HttpClient.delete(this.links[1]['application']);
+return this.HttpClient.delete(this.links[1]['application']+1);
         }
 }
