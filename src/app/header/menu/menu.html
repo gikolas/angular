@@ -34,14 +34,21 @@
         <a href="#">Help</a>
     </li>-->
     <li>
-        <a routerLink="review" (click)="changeImageReview()">Reviews</a>
+        <a routerLink="review" 
+        (click)="changeImageReview()"
+        >Reviews</a>
     </li>
     <li>
-        <a routerLink="blog" (click)="changeImageBlog()">Blog</a>
+        <a routerLink="blog" (click)="changeImageBlog()"
+        routerLinkActive="actives"
+       >Blog</a>
     </li>
 
     <li>
-        <a routerLink="myApp" (click)="changeImageBlog()">My Applications</a>
+        <a routerLink="myApp"
+         (click)="changeImageBlog()"
+         [class.showMyApp]="showMyAppStatus"
+         class="hideMyApp">My Applications</a>
     </li>
   </ul></nav>
         </div>

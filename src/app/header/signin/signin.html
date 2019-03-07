@@ -12,19 +12,19 @@
                 <modalnav>
                         <ng-container *ngIf='!showSignUp'>
                     <modalnavitem [header]="'Sign In'">
-                        <form>
-                           Email: <input type="email" class="form-control">
-                           Password: <input type="password" class="form-control">
-                           <input type="submit" value="Sign In" class="btn btn-primary">
+                        <form [formGroup]="signInForm" (ngSubmit)="onSubmit($event)">
+                           Email: <input type="email" class="form-control" formControlName="username">
+                           Password: <input type="password" class="form-control" formControlName="password">
+                           <button type="submit"  class="btn btn-primary" >Sign In</button>
                         </form>
                    </modalnavitem>
                    </ng-container>
               <ng-container *ngIf='showSignUp'>
                   <modalnavitem [header]="'Sign Out'" >
-                        <form>
-                                Full Name: <input type="text" class="form-control">
-                                 Email: <input type="email" class="form-control">
-                                 Password: <input type="password" class="form-control">
+                        <form [formGroup]="signUpForm" (ngSubmit)="onSubmitUp($event)">
+                               
+                                 Email: <input type="email" class="form-control" formControlName="username">
+                                 Password: <input type="password" class="form-control" formControlName="password">
                                  Repeat Password: <input type="password" class="form-control">
                                  <input type="submit" value="Sign Up" class="btn btn-primary">
                               </form>
@@ -32,6 +32,8 @@
             </ng-container>
 
     </modalnav>
-  
+    <div  class="container" >
+  <a href="#" (click)="LogOut($event)" class="signOut" [class.SignOutActivates]="activateStatus">Sign Out</a>
+</div>
     
 </div>

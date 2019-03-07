@@ -30,6 +30,8 @@ import {StoreModule} from '@ngrx/store';
 import { ReactiveFormsModule } from '@angular/forms';
 import {pipeRates} from './check-rate/ratePipe';
 import { MyappComponent } from './myapp/myapp.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,6 +66,7 @@ import { MyappComponent } from './myapp/myapp.component';
       someAction : reducer
     }),
     ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
    
   ],

@@ -12,6 +12,7 @@ import {menuDirective} from './menudirective';
 import { CommonModule } from '@angular/common';
 import {RouterModule,Routes} from '@angular/router';
 import {modalModule} from '../modal/modalmodule';
+import {ReactiveFormsModule} from '@angular/forms';
 @NgModule({
 declarations : [
     logo,
@@ -33,8 +34,9 @@ exports : [
     getstartDirective,
     signin,
     menuDirective,
+    
     ],
-    imports:[CommonModule,RouterModule,modalModule]
+    imports:[CommonModule,RouterModule,modalModule,ReactiveFormsModule]
 })
 
 export class headerModule{

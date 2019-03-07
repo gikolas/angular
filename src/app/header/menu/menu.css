@@ -87,3 +87,14 @@ z-index: 10
 
     
 }
+
+.hideMyApp{
+    display: none
+}
+.showMyApp{
+    display: block  
+}
+
+.actives{
+    color:red
+}

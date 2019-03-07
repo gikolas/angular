@@ -59,3 +59,41 @@ width: 10px;
     color:rgb(11, 21, 48);
     background-color: rgba(209, 211, 198, 0.822)
 }
+
+.loading{
+    background-color: #353535d5;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    margin: 0 auto;
+    display: none
+}
+
+.loading img {
+    margin:400px 500px;
+    width:100px;
+    border-radius:50px;
+    background-color: white
+}
+.showLoading {
+    display: block
+}
+.signOut{
+ 
+    text-decoration: underline;
+    color:red;
+    text-align: center;
+    margin-left:10%;
+    margin-top:10%;
+    display: none
+}
+.SignOutActivates{
+    text-decoration: underline;
+    color:red;
+    text-align: center;
+    margin-left:10%;
+    margin-top:10%;
+    display: block
+}

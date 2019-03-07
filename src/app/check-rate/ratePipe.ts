@@ -10,11 +10,12 @@ export class pipeRates implements PipeTransform {
     transform(amount:number,baseAmount:number,ccy:string,year:number,penalty:number){
         if(ccy=='GEL'){
             if(penalty <=0 && baseAmount<=amount ){
-                return baseAmount-100;
+                return `Your Rate Is  ${baseAmount-100} ${ccy} `;
             }
 
             if(penalty > 0 && baseAmount<=amount ){
-                return baseAmount-100-penalty;
+                return `Your Rate Is  ${baseAmount-100-penalty} ${ccy} `;
+            
             }
 else {
     return 'Check Parameters'
@@ -23,11 +24,11 @@ else {
         }
         if(ccy=='USD'){
             if(penalty <=0 && baseAmount<=amount ){
-                return baseAmount-1000;
+                return `Your Rate Is  ${baseAmount-1000} ${ccy} `;
             }
 
             if(penalty > 0 && baseAmount<=amount ){
-                return baseAmount-1000-penalty;
+                return `Your Rate Is  ${baseAmount-1000-penalty} ${ccy} `;
             }
 
 

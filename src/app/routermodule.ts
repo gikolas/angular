@@ -4,6 +4,7 @@ import {RouterModule,Routes} from '@angular/router';
 import {mainContent} from './main-content/main-content';
 import {CheckRateComponent} from './check-rate/check-rate.component';
 import {ApplicationsComponent} from './applications/applications.component';
+import {MyAppGuard} from './my-app.guard';
 const routes: Routes = [
   {
     path:'',
@@ -67,7 +68,8 @@ const routes: Routes = [
 
   {
 path:'myApp',
-loadChildren:'./myapp/myapp.module#myappModule'
+loadChildren:'./myapp/myapp.module#myappModule',
+canActivate:[MyAppGuard]
   },
   {
     path: '**',

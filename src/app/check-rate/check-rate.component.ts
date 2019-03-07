@@ -14,6 +14,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class CheckRateComponent implements OnInit {
   loanAmount:string;
   testStore:Observable<any>;
+  turnOnPipe:boolean = false;
   constructor(
   private route:ActivatedRoute,
   private firebaseService:firebaseService,
@@ -51,8 +52,8 @@ Penalty:number;
     this.Ccy = this.getRate.controls.ccy.value;
     this.Year = this.getRate.controls.year.value;
     this.Penalty = this.getRate.controls.penalty.value;
-
-    console.log(this.getRate.controls.amount.value);
+this.turnOnPipe = true;
+    
   }
 
 }

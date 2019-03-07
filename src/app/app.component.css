@@ -12,3 +12,26 @@ body{
 .containers-router{
    min-height:200px;
 }
+
+.loading{
+    background-color: #353535d5;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    margin: 0 auto;
+    display: none
+}
+
+.loading img {
+  margin-left:400px;
+  margin-top:400px;
+   width:100px;
+  
+    border-radius:50px;
+    background-color: white
+}
+.showLoading {
+    display: block
+}

@@ -5,10 +5,12 @@ import {modalNav} from './modal-nav/modalnav';
 import { BrowserModule } from '@angular/platform-browser';
 import {modalService} from './modalservice';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ReactiveFormsModule} from '@angular/forms'
 @NgModule({
 imports:[
     BrowserModule,
-    BrowserAnimationsModule],
+    BrowserAnimationsModule,
+    ReactiveFormsModule],
     
 providers: [modalService],
 declarations:[

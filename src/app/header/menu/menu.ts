@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import { trigger,state,style,transition,animate } from '@angular/animations';
 import {services} from '../../services';
-
+import {firebaseService} from '../../firebase/firebase.service';
 @Component({
     selector :'menuApp',
     templateUrl :'./menu.html',
@@ -22,6 +22,8 @@ transition('over => out', [
 })
 export class menu {
   tglmenu = 'over';
+  showMyAppStatus = false;
+  green:string;
     param=true;
    
     hide(){
@@ -55,7 +57,10 @@ movingImage = 'url(assets/reloation-hero-bg.jpg)';
 reviewImage = 'url(assets/reviews-hero.png)';
 blogImage = 'url(assets/WeddingHero.png)';
 className = 'navbar-nav';
-     constructor(private myservice:services){}
+     constructor(
+       private myservice:services,
+       private fb:firebaseService
+       ){}
      changeImage(){
       this.myservice.changeHeaderImage(this.imageName,'jumbotrons','navbar-navs');
 this.className = 'navbar-navs';
@@ -88,16 +93,31 @@ this.className = 'navbar-navs';
      changeImageReview(){
       this.myservice.changeHeaderImage(this.reviewImage,'jumbotrons','navbar-navs');
       this.className = 'navbar-navs';
+    
+    
      }
 
      changeImageBlog(){
       this.myservice.changeHeaderImage(this.blogImage,'jumbotron','navbar-nav');
       this.className = 'navbar-nav';
+      
+      
      }
 ngOnInit(){
 this.myservice.Mysubject.subscribe((data:any)=>{
 this.className = data.className;
 })
+if(window.localStorage.getItem('activate')){
+  this.showMyAppStatus = true;
+      }
+      else {
+        this.showMyAppStatus = false;  
+      }
+
+      this.fb.canAcitaveSubjet.subscribe((app:boolean)=>{
+        this.showMyAppStatus = !app;
+      })
+
 }
      
 

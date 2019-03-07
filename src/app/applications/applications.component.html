@@ -1,4 +1,4 @@
-<div class="containers">
+<div class="containers" *ngIf="applicationStatus; else signIn">
 
   <h4>Create {{LoanType.name}} Application  </h4>
  <form [formGroup]="createApp" (ngSubmit)="onSubmit()">
@@ -14,8 +14,15 @@ Year : <select class="form-control" formControlName = 'year'>
 <option>5</option>
 </select>
 Payment Day : <select class="form-control" formControlName = 'paymentDay'>
-  <option *ngFor="let x of numbers"> {{x}}</option>
+  
+  <option *ngFor="let x of numbers" value="{{x}}"> {{x}}</option>
   </select>
 <input type="submit" value="Create App" class="bt btn-primary">
 </form>
 </div>
+<ng-template #signIn>
+    <div class="containersSignIn">
+      <h3>Please Sign In!</h3>
+    </div>
+  
+</ng-template>

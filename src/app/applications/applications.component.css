@@ -6,6 +6,18 @@ margin: 0 auto;
 margin-top:20px;
 }
 
+.containersSignIn{
+    height:400px;
+    margin: 0 auto;
+        width:1500px;
+     background-color:white;
+    margin-top:20px;
+}
+.containersSignIn h3{
+    color:rgb(207, 42, 42);
+    text-align: center;
+    padding:12px 12px
+}
 .form-control{
     width:350px;
     padding:12px 12px;

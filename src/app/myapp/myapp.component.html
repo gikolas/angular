@@ -1,5 +1,25 @@
-<h1 *ngFor="let x of masM; let i=index">
-{{x[0].amount}}<button (click)="deleteApp(i)">deleteapp</button>
-{{i}}
+<div class="containers">
+    <h3>My Applications</h3>
+    <table class="table table-bordered">
 
-</h1>
+        <tbody>
+ 
+            <tr>
+                <td>Amount</td>
+                <td>Application Type</td>
+                <td>Ccy</td>
+                <td>Identifier</td>
+                <td>Payment Day</td>
+                <td>Year</td>
+            </tr>
+        </tbody>
+<tr *ngFor="let appItems of masM; let i=index">
+<td>{{appItems[0].amount}}</td>
+<td>{{appItems[0].application_type}}</td>
+<td>{{appItems[0].ccy}}</td>
+<td>{{appItems[0].identifier}}</td>
+<td>{{appItems[0].paymentDay}}</td>
+<td>{{appItems[0].year}}</td>
+</tr>
+</table>
+</div>

@@ -2,7 +2,8 @@
 
     <h4>Let’s conquer those {{RouterName.name}} loans.</h4>
     <p>Answer a few questions to get your rate and savings without affecting your credit score.</p>
-<form [formGroup]="getRate" (ngSubmit)="onSubmit()">
+    <span *ngIf="turnOnPipe">{{loanAmount | pipeRate:Amount:Ccy:Year:Penalty}}</span>
+    <form [formGroup]="getRate" (ngSubmit)="onSubmit()">
 Amount : <input type="text" class="form-control" formControlName="amount">
 Ccy : <select class="form-control" formControlName="ccy">
 <option value="GEL">GEL</option>
@@ -17,7 +18,7 @@ Penalty : <input type="text" class="form-control" formControlName="penalty" >
 <input type="submit" value="Get Rate" class="bt btn-primary">
 
 </form>
-<span>{{loanAmount | pipeRate:Amount:Ccy:Year:Penalty}}</span>
+
 
 </div>
 
