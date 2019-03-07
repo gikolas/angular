@@ -27,6 +27,7 @@ export class MyAppGuard implements CanActivate, CanActivateChild, CanLoad {
 
 
       return this.loadStatus;
+      //t
   }
   canActivateChild(
     next: ActivatedRouteSnapshot,
