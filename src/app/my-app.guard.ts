@@ -6,12 +6,16 @@ import {firebaseService} from './firebase/firebase.service';
   providedIn: 'root'
 })
 export class MyAppGuard implements CanActivate, CanActivateChild, CanLoad {
+
   loadStatus:boolean;
   constructor(private fb:firebaseService){}
+
+
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     if(window.localStorage.getItem('activate')){
+
       this.loadStatus = true;
     }
     else {
@@ -20,6 +24,8 @@ export class MyAppGuard implements CanActivate, CanActivateChild, CanLoad {
     this.fb.canAcitaveSubjet.subscribe((status:boolean)=>{
       this.loadStatus = status;
     })
+
+
       return this.loadStatus;
   }
   canActivateChild(
