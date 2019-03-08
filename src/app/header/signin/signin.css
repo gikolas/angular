@@ -97,3 +97,38 @@ width: 10px;
     margin-top:10%;
     display: block
 }
+
+.error{
+    color:red;
+    margin:5px 1px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold
+}
+.ng-valid,
+.ng-valid.required {
+    
+}
+
+input.ng-invalid.ng-touched{
+ border:1px solid red
+}
+
+#alertModal{
+    position: absolute;
+    border: 1px solid rgb(202, 191, 191);
+    width:500px;
+    height:70px;
+    background-color: white;
+    margin-top:40px;
+    margin-left:-30px;
+    border-radius:8px;
+    color:rgb(145, 131, 131);
+    
+    
+}
+
+#alertModal p {
+    padding:12px 12px;
+    font-weight: 500;
+    font-family: cursive;
+}

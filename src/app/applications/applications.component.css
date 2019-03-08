@@ -33,7 +33,19 @@ h4, p {
     text-align: center
 }
 .btn-primary {
-    width:120px;
-height:30px;
+
 margin-top:12px
+}
+
+.error{
+    color:red;
+    margin:2px 1px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    width: 300px;
+}
+
+
+input.ng-invalid.ng-touched{
+ border:1px solid red
 }

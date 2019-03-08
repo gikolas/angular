@@ -14,8 +14,13 @@
                     <modalnavitem [header]="'Sign In'">
                         <form [formGroup]="signInForm" (ngSubmit)="onSubmit($event)">
                            Email: <input type="email" class="form-control" formControlName="username">
+                           <p class="error" *ngIf="(username.dirty || username.touched) && username.invalid">Invalid Email Format</p>
+                         
                            Password: <input type="password" class="form-control" formControlName="password">
-                           <button type="submit"  class="btn btn-primary" >Sign In</button>
+                          <p class="error" *ngIf="(password.dirty || password.touched) && password.invalid">Invalid Password Credentials</p>
+                           <button type="submit"  
+                           class="btn btn-primary"
+                           [disabled]="!signInForm.valid" >Sign In</button>
                         </form>
                    </modalnavitem>
                    </ng-container>
@@ -24,9 +29,17 @@
                         <form [formGroup]="signUpForm" (ngSubmit)="onSubmitUp($event)">
                                
                                  Email: <input type="email" class="form-control" formControlName="username">
+                                 <p class="error" *ngIf="(usernameUp.dirty || usernameUp.touched) && usernameUp.invalid">Invalid Email Format</p>
+                         
                                  Password: <input type="password" class="form-control" formControlName="password">
-                                 Repeat Password: <input type="password" class="form-control">
-                                 <input type="submit" value="Sign Up" class="btn btn-primary">
+                                
+                                 Repeat Password: <input type="password" class="form-control" formControlName="rpassword">
+                                 <p class="error" *ngIf="(rpassword.dirty || rpassword.touched) && rpassword.errors?.MatchPassword">Password not match</p>
+                         
+                                 <input type="submit" 
+                                 value="Sign Up" 
+                                 class="btn btn-primary"
+                                 [disabled]="!signUpForm.valid">
                               </form>
                 </modalnavitem>
             </ng-container>
@@ -37,3 +50,35 @@
 </div>
     
 </div>
+<div id="alertModal" [class.hide]="!showModalnav"
+[@forebaseModal]='fadeState'>
+        <i class="fa fa-times" (click)="closeModalemail()" style="    float: right;
+        margin-top: -20px;color:#a9ff00"></i>
+   
+<modalnav>
+   <ng-container>
+       <modalnavitem>
+           <p>{{modalText}}</p>
+       </modalnavitem>
+   </ng-container> 
+</modalnav>
+</div>
+
+
+<div id="alertModal" [class.hide]="!showModalSuccess"
+[@forebaseModal]='fadeState'>
+      
+   
+<modalnav>
+   <ng-container>
+       <modalnavitem>
+           <p>{{successText}}  <span 
+            class="btn btn-warning" 
+            (click)="plsSignIn()"
+            style="margin-left:20px">Ok</span></p>
+          
+       </modalnavitem>
+   </ng-container> 
+</modalnav>
+</div>
+
