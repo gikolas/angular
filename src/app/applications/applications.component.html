@@ -8,20 +8,28 @@
    >
     <p class="error" *ngIf="(email.dirty || email.touched) && email.errors?.invalidEmail">Unknown Email</p>
 
-   Amount : <input type="text" class="form-control" formControlName = 'amount'>
-<p class="error" *ngIf="(amount.dirty || amount.touched) && amount.invalid">Incorrect Amount</p>
+   Amount : <input type="text" class="form-control" formControlName = 'amount' placeholder="Enter Password">
+<p class="error" *ngIf="(amount.dirty || amount.touched) && amount.invalid" >Incorrect Amount</p>
 
 Ccy : <select class="form-control" formControlName = 'ccy'>
-<option>GEL</option>
-<option>USD</option>
+    <option value=""
+    hidden
+>Select Ccy</option>
+<option *ngFor="let ccy of Ccy" value="{{ccy}}">{{ccy}}</option>
+
 </select>
-Year : <select class="form-control" formControlName = 'year'>
-<option>2</option>
-<option>4</option>
-<option>5</option>
+Year : <select class="form-control" formControlName = 'year' >
+    <option value=""
+    hidden
+>Select Year</option>
+<option *ngFor="let year of YearNumbers" value="{{year}}">{{year}}</option>
+
 </select>
-Payment Day : <select class="form-control" formControlName = 'paymentDay'>
-  <option *ngFor="let x of numbers" value="{{x}}"> {{x}}</option>
+Payment Day : <select class="form-control" formControlName = 'paymentDay' >
+    <option value=""
+    hidden
+>Select Payment Day 1 ... 12</option>
+  <option *ngFor="let Pday of PdayNumbers" value="{{Pday}}"> {{Pday}}</option>
   </select>
 <input type="submit" 
 value="Create App" 

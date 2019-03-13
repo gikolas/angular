@@ -21,7 +21,9 @@ export class ApplicationsComponent implements OnInit {
 LoanType:any;
 Username:string;
 applicationStatus:boolean;
-  numbers = [1,2,3,4,5,6,7,8,9,10,11,12];
+  PdayNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
+  YearNumbers = [2,4,5];
+  Ccy = ['GEL','USD'];
   ngOnInit() {
    this.LoanType =  this.route.snapshot.params;
  this.firebaseService.canAcitaveSubjet.subscribe((appStatus:boolean)=>{

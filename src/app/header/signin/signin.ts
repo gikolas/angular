@@ -76,9 +76,9 @@ export class signin {
     }
 
     signInForm = new FormGroup({
-        username: new FormControl('gio@gio.ge',
+        username: new FormControl('',
             [Validators.email, Validators.required]),
-        password: new FormControl('123456',
+        password: new FormControl('',
             [Validators.required, Validators.minLength(6)])
     })
     get password() {
