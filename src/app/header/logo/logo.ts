@@ -1,19 +1,19 @@
-import {Component,Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { services } from '../../services';
 
 @Component({
-    selector :'logoApp',
-    templateUrl :'/logo.html',
-    styleUrls:['./logo.css']
+    selector: 'logoApp',
+    templateUrl: '/logo.html',
+    styleUrls: ['./logo.css']
 })
 
 export class logo {
-    constructor(private myservice:services){}
+    constructor(private myservice: services) { }
     mainImage = 'url(assets/mphp-photo-hero.jpg)';
     className = 'navbar-nav';
-    changeMain(){
-        this.myservice.changeHeaderImage(this.mainImage,'jumbotron','navbar-nav');
+    changeMain() {
+        this.myservice.changeHeaderImage(this.mainImage, 'jumbotron', 'navbar-nav');
         this.className = 'navbar-nav';
-       }
-@Input('logo') logo : string;
+    }
+    @Input('logo') logo: string;
 }

@@ -1,21 +1,15 @@
-
 <div class="container">
     <div class="row">
-        <div class="col-sm-3" *ngFor = "let lisArray of containerListArray">
+        <div class="col-sm-3" *ngFor="let lisArray of containerListArray">
             <h3 [style.maxWidth.px]="170" [style.marginLeft.%]="22">{{lisArray.h3}}</h3>
-     
+
             <div class="blockMenu">
-                <p  >
-                    {{lisArray.p}}        
+                <p>
+                    {{lisArray.p}}
                 </p>
-                
             </div>
-            <a routerLink = 'check/{{lisArray.loanType}}'><button class="btn btn-primary">{{lisArray.button}}</button>
+            <a routerLink='check/{{lisArray.loanType}}'><button class="btn btn-primary">{{lisArray.button}}</button>
             </a>
-            </div>
-        
-
+        </div>
     </div>
-
 </div>
-

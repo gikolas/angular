@@ -1,53 +1,57 @@
-.myModal{
-
-    background-color:#353535d5;
-width:100%;
-    top:0px;
-    height:100%;
- position: fixed;
-    z-index:1000;
+.myModal {
+    background-color: #353535d5;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
     margin: 0 auto;
-
-
 }
 
+.myModalHeader {
+    margin-top: -200px
+}
 
 h5 {
     text-align: center;
-
-    color:rgb(75, 72, 72);
-padding:22px
+    color: rgb(75, 72, 72);
+    padding: 22px
 }
-h6{
-    color:rgb(75, 72, 72);
+
+h6 {
+    color: rgb(75, 72, 72);
     text-align: center;
     font-weight: 800;
-    padding:14px
+    padding: 14px
 }
+
 p {
-    color:rgb(75, 72, 72); 
+    color: rgb(75, 72, 72);
     text-align: center;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .myModalDiv {
     margin: 0 auto;
     height: 400px;
-    width:1000px;
+    width: 1000px;
     background: white;
-    border-radius:4px;
-    margin-top:310px;
+    border-radius: 4px;
+    margin-top: 310px;
 }
 
 .col-sm-4 img {
     margin-left: 60px
 }
+
 .col-sm-3 img {
     margin-left: 50px
 }
-.col-sm-4{
-max-width:300px
+
+.col-sm-4 {
+    max-width: 300px
 }
+
 .col-sm-3 button {
     margin-left: 50px;
     border-radius: 2px;
@@ -55,7 +59,7 @@ max-width:300px
     font-size: 15px;
     height: 32px;
     min-width: 80px;
-    border: 1px solid rgba(0,0,0,.15);
+    border: 1px solid rgba(0, 0, 0, .15);
     text-transform: capitalize;
     color: #f9f9fa;
     background-color: #1bb580;
@@ -68,22 +72,22 @@ max-width:300px
     font-size: 15px;
     height: 32px;
     min-width: 80px;
-    border: 1px solid rgba(0,0,0,.15);
+    border: 1px solid rgba(0, 0, 0, .15);
     text-transform: capitalize;
     color: #f9f9fa;
     background-color: #1bb580;
 }
 
 .row {
-    margin-left:10px
+    margin-left: 10px
 }
 
 i {
     position: absolute;
-    margin-left:970px;
-    margin-top:-61px;
+    margin-left: 970px;
+    margin-top: -61px;
     font-size: 20px;
-    color:rgb(75, 72, 72);
+    color: rgb(75, 72, 72);
     cursor: pointer;
 }
 

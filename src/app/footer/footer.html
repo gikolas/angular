@@ -1,41 +1,30 @@
-<div  class="container" style="margin-top:-150px"
->
-          
- 
-                <div  id="lefter" *ngFor="let brand of brands">
-                    <div class="press-block">
-                        <a [href]="brand.href" target="_blank" >
-                            <img [src]="brand.src">
-                        </a>
+<div class="container" style="margin-top:-150px">
+    <div id="lefter" *ngFor="let brand of brands">
+        <div class="press-block">
+            <a [href]="brand.href" target="_blank">
+                <img [src]="brand.src">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper" style="padding:85px">
+    <div class="container">
+        <nav class="footer-navigation for-laptop-and-up-only">
+            <div class="layout">
+                <div class="layout__item u-3-of-4 u-1-of-1-lap">
+                    <div class="menu-footer-menu-container">
+                        <ul id="footer-menu" class="menu" *ngFor="let footerText of footerTexts">
+                            <li id="menu-item-27">
+                                <a href="#" id="url">{{footerText.menuText}}</a>
+                                <ul class="sub-menu">
+                                    <li *ngFor="let menues of footerText.submenuText.subtexts">
+                                        <a href="#" itemprop="url">{{menues}}</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-     
-                </div>
-
-
-    <div class="content-wrapper" style="padding:85px"
-    >
-        <div class="container">
-      <nav class="footer-navigation for-laptop-and-up-only">
-        <div class="layout">
-          <div class="layout__item u-3-of-4 u-1-of-1-lap">
-            <div class="menu-footer-menu-container">
-                <ul id="footer-menu" class="menu" *ngFor="let footerText of footerTexts"> 
-
-<li id="menu-item-27">
-    <a href="#" id="url">{{footerText.menuText}}</a>
-<ul class="sub-menu" >
-
-  <li *ngFor="let menues of footerText.submenuText.subtexts">
-      <a href="#" itemprop="url">{{menues}}</a></li>
-  
-</ul>
-</li>
-</ul>
-</div>            </div>
-
-        </div>
-      </nav>
-
+            </div>
+        </nav>
     </div>
 </div>

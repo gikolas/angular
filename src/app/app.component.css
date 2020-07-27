@@ -1,19 +1,17 @@
-body{
+body {
     background-color: pink;
 }
 
 .containers {
- 
-    width:auto;
- display: block;
-
+    width: auto;
+    display: block;
 }
 
-.containers-router{
-   min-height:200px;
+.containers-router {
+    min-height: 200px;
 }
 
-.loading{
+.loading {
     background-color: #353535d5;
     width: 100%;
     top: 0px;
@@ -25,13 +23,13 @@ body{
 }
 
 .loading img {
-  margin-left:50%;
-  margin-top:400px;
-   width:50px;
-  
-    border-radius:50px;
+    margin-left: 50%;
+    margin-top: 400px;
+    width: 50px;
+    border-radius: 50px;
     background-color: white
 }
+
 .showLoading {
     display: block
 }

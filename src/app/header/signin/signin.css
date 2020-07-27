@@ -1,66 +1,68 @@
-.signin{
+.signin {
     border-radius: 2px;
     transition: all .25s;
-float: right;
+    float: right;
     height: 32px;
     padding: 0 25px;
- background:none;
+    background: none;
     color: #fff;
     text-align: center!important;
     cursor: pointer;
     text-decoration: none;
-    margin-left:10px;
-    border:1px solid white
-}
-.signin:hover{
-    border:1px solid #1bb580
+    margin-left: 10px;
+    border: 1px solid white
 }
 
-#signinmoadl{
+.signin:hover {
+    border: 1px solid #1bb580
+}
+
+#signinmoadl {
     position: absolute;
     border: 1px solid rgb(202, 191, 191);
-    width:300px;
-    height:360px;
+    width: 300px;
+    height: 360px;
     background-color: white;
-    margin-top:40px;
-    margin-left:80px;
-    border-radius:8px
+    margin-top: 40px;
+    margin-left: 80px;
+    border-radius: 8px
 }
-.row{
-    margin-top:-10px;
+
+.row {
+    margin-top: -10px;
 }
-.row div{
+
+.row div {
     text-align: center
 }
 
 form {
-    width:240px;
-    margin-left:20px
+    width: 240px;
+    margin-left: 20px
 }
 
 i {
-
-    margin-left:270px;
-width: 10px;
+    margin-left: 270px;
+    width: 10px;
     font-size: 20px;
-    color:rgb(75, 72, 72);
+    color: rgb(75, 72, 72);
     cursor: pointer !important;
 }
 
 .hide {
-    display:none
+    display: none
 }
 
-.btn-primary{
-    margin-top:10px
+.btn-primary {
+    margin-top: 10px
 }
 
-.setColors{
-    color:rgb(11, 21, 48);
+.setColors {
+    color: rgb(11, 21, 48);
     background-color: rgba(209, 211, 198, 0.822)
 }
 
-.loading{
+.loading {
     background-color: #353535d5;
     width: 100%;
     top: 0px;
@@ -72,63 +74,62 @@ width: 10px;
 }
 
 .loading img {
-    margin:400px 500px;
-    width:100px;
-    border-radius:50px;
+    margin: 400px 500px;
+    width: 100px;
+    border-radius: 50px;
     background-color: white
 }
+
 .showLoading {
     display: block
 }
-.signOut{
- 
+
+.signOut {
     text-decoration: underline;
-    color:red;
+    color: red;
     text-align: center;
-    margin-left:10%;
-    margin-top:10%;
+    margin-left: 10%;
+    margin-top: 10%;
     display: none
 }
-.SignOutActivates{
+
+.SignOutActivates {
     text-decoration: underline;
-    color:red;
+    color: red;
     text-align: center;
-    margin-left:10%;
-    margin-top:10%;
+    margin-left: 10%;
+    margin-top: 10%;
     display: block
 }
 
-.error{
-    color:red;
-    margin:5px 1px;
+.error {
+    color: red;
+    margin: 5px 1px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight:bold
+    font-weight: bold
 }
+
 .ng-valid,
-.ng-valid.required {
-    
+.ng-valid.required {}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red
 }
 
-input.ng-invalid.ng-touched{
- border:1px solid red
-}
-
-#alertModal{
+#alertModal {
     position: absolute;
     border: 1px solid rgb(202, 191, 191);
-    width:500px;
-    height:70px;
+    width: 500px;
+    height: 70px;
     background-color: white;
-    margin-top:40px;
-    margin-left:-30px;
-    border-radius:8px;
-    color:rgb(145, 131, 131);
-    
-    
+    margin-top: 40px;
+    margin-left: -30px;
+    border-radius: 8px;
+    color: rgb(145, 131, 131);
 }
 
 #alertModal p {
-    padding:12px 12px;
+    padding: 12px 12px;
     font-weight: 500;
     font-family: cursive;
 }

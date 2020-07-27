@@ -1,29 +1,18 @@
 <div class="containers">
-
     <h4>Let’s conquer those {{RouterName.name}} loans.</h4>
     <p>Answer a few questions to get your rate and savings without affecting your credit score.</p>
     <span *ngIf="turnOnPipe">{{loanAmount | pipeRate:Amount:Ccy:Year:Penalty}}</span>
     <form [formGroup]="getRate" (ngSubmit)="onSubmit()">
-Amount : <input type="text" class="form-control" formControlName="amount" placeholder="Loan Amount">
-Ccy : <select class="form-control" formControlName="ccy">
-  <option value="" hidden>Loan Ccy</option>
-<option value="GEL">GEL</option>
-<option value="USD">USD</option>
-</select>
-Year : <select class="form-control" formControlName="year">
-    <option value="" hidden>Select Year</option>
-  <option value="2">2</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-</select>
-Penalty : <input type="text" class="form-control" formControlName="penalty" 
-placeholder="Enter Penalty Amount"
->
-
-<input type="submit" value="Get Rate" class="bt btn-primary">
-
-</form>
-
-
+        Amount : <input type="text" class="form-control" formControlName="amount" placeholder="Loan Amount"> Ccy : <select class="form-control" formControlName="ccy">
+                  <option value="" hidden>Loan Ccy</option>
+                  <option value="GEL">GEL</option>
+                  <option value="USD">USD</option>
+              </select> Year : <select class="form-control" formControlName="year">
+                <option value="" hidden>Select Year</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select> Penalty : <input type="text" class="form-control" formControlName="penalty" placeholder="Enter Penalty Amount">
+        <input type="submit" value="Get Rate" class="bt btn-primary">
+    </form>
 </div>
-

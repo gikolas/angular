@@ -1,51 +1,52 @@
-.containers{
-    height:800px;
-margin: 0 auto;
-    width:1500px;
- background-color: rgb(240, 235, 235);
-margin-top:20px;
+.containers {
+    height: 800px;
+    margin: 0 auto;
+    width: 1500px;
+    background-color: rgb(240, 235, 235);
+    margin-top: 20px;
 }
 
-.containersSignIn{
-    height:400px;
+.containersSignIn {
+    height: 400px;
     margin: 0 auto;
-        width:1500px;
-     background-color:white;
-    margin-top:20px;
+    width: 1500px;
+    background-color: white;
+    margin-top: 20px;
 }
-.containersSignIn h3{
-    color:rgb(207, 42, 42);
+
+.containersSignIn h3 {
+    color: rgb(207, 42, 42);
     text-align: center;
-    padding:12px 12px
+    padding: 12px 12px
 }
-.form-control{
-    width:350px;
-    padding:12px 12px;
-    height:50px;
-    
+
+.form-control {
+    width: 350px;
+    padding: 12px 12px;
+    height: 50px;
 }
 
 form {
- margin-left:570px
+    margin-left: 570px
 }
 
-h4, p {
+h4,
+p {
     text-align: center
 }
-.btn-primary {
 
-margin-top:12px
+.btn-primary {
+    margin-top: 12px
 }
 
-.error{
-    color:red;
-    margin:2px 1px;
+.error {
+    color: red;
+    margin: 2px 1px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight:bold;
+    font-weight: bold;
     width: 300px;
 }
 
-
-input.ng-invalid.ng-touched{
- border:1px solid red
+input.ng-invalid.ng-touched {
+    border: 1px solid red
 }

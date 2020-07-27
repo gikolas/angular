@@ -1,18 +1,16 @@
-import {Directive,HostBinding,ElementRef,HostListener} from '@angular/core';
+import { Directive, HostBinding, ElementRef, HostListener } from '@angular/core';
 @Directive({
-selector : '[direct]'
+    selector: '[direct]'
 })
 export class directives {
-constructor( element:ElementRef){
+    constructor(element: ElementRef) {
 
-}
-@HostBinding('style.opacity') opacity;
-@HostListener("mouseover") onmouseover(){
-this.opacity = '1';
-}
-@HostListener("mouseout") onmouseout(){
-    this.opacity = '0.2';
     }
-    
-
+    @HostBinding('style.opacity') opacity;
+    @HostListener("mouseover") onmouseover() {
+        this.opacity = '1';
+    }
+    @HostListener("mouseout") onmouseout() {
+        this.opacity = '0.2';
+    }
 }

@@ -1,54 +1,38 @@
 <div class="menu">
-        <nav class="navbar navbar-expand-lg">
-  <ul  [ngClass]="className" >
-      <li>
-          <a routerLink="refinance" (click)="changeImage()" >Refinance Student Loan</a>
-      </li>
-     
-      <li>
-        <a href="#" (mouseover)="show_link()" (mouseout)="hide()" class="dropdown-toggle" style="padding-bottom: 30px;">Personalt Loans
+    <nav class="navbar navbar-expand-lg">
+        <ul [ngClass]="className">
+            <li>
+                <a routerLink="refinance" (click)="changeImage()">Refinance Student Loan</a>
+            </li>
+            <li>
+                <a href="#" (mouseover)="show_link()" (mouseout)="hide()" class="dropdown-toggle" style="padding-bottom: 30px;">Personalt Loans
             <span class="caret"></span></a>
-            
-        <ul 
-        direct
-        [@tooglemenu]="tglmenu" 
-        id="submenu" 
-        [class.submenu]="param" 
-        (mouseover)="show()" 
-        (mouseout)="hides()">
-        <li style="height:20px"></li>
-            <li><a routerLink='credit-card' (click)="changeImageCreditCard()" >Credit Card Consolidation</a></li>
-            <li><a routerLink='engagement' (click)="changeImageEngagement()">Engagement Ring Loans</a></li>
-            <li><a routerLink='improvement' (click)="changeImageHome()">Home Improvement Loans</a></li>
-            <li><a routerLink='medical' (click)="changeImageMedical()">Medical Loans</a></li>
-            <li><a routerLink='moving' (click)="changeImageMoving()">Moving Loans</a></li>
-           <!-- <li><a>Vacation Loans</a></li>
+                <ul direct [@tooglemenu]="tglmenu" id="submenu" [class.submenu]="param" (mouseover)="show()" (mouseout)="hides()">
+                    <li style="height:20px"></li>
+                    <li><a routerLink='credit-card' (click)="changeImageCreditCard()">Credit Card Consolidation</a></li>
+                    <li><a routerLink='engagement' (click)="changeImageEngagement()">Engagement Ring Loans</a></li>
+                    <li><a routerLink='improvement' (click)="changeImageHome()">Home Improvement Loans</a></li>
+                    <li><a routerLink='medical' (click)="changeImageMedical()">Medical Loans</a></li>
+                    <li><a routerLink='moving' (click)="changeImageMoving()">Moving Loans</a></li>
+                    <!-- <li><a>Vacation Loans</a></li>
             <li><a>Wedding Loans</a></li>-->
-        </ul>
-    </li>
-
-    <!--<li>
+                </ul>
+            </li>
+            <!--<li>
         <a href="#">Eligibility</a>
     </li>-->
-       <!--<li>
+            <!--<li>
         <a href="#">Help</a>
     </li>-->
-    <li>
-        <a routerLink="review" 
-        (click)="changeImageReview()"
-        >Reviews</a>
-    </li>
-    <li>
-        <a routerLink="blog" (click)="changeImageBlog()"
-        routerLinkActive="actives"
-       >Blog</a>
-    </li>
-
-    <li>
-        <a routerLink="myApp"
-         (click)="changeImageBlog()"
-         [class.showMyApp]="showMyAppStatus"
-         class="hideMyApp">My Applications</a>
-    </li>
-  </ul></nav>
-        </div>
+            <li>
+                <a routerLink="review" (click)="changeImageReview()">Reviews</a>
+            </li>
+            <li>
+                <a routerLink="blog" (click)="changeImageBlog()" routerLinkActive="actives">Blog</a>
+            </li>
+            <li>
+                <a routerLink="myApp" (click)="changeImageBlog()" [class.showMyApp]="showMyAppStatus" class="hideMyApp">My Applications</a>
+            </li>
+        </ul>
+    </nav>
+</div>

@@ -1,35 +1,20 @@
-<div class="containers"
-[@pageOpacity]="pageNimation"
-[style.backgroundImage]="headerImageName"
-[style.backgroundSize.%]="headerImageName==='url(assets/paint.jpg)' ? '90' : '100'"
->
-
-
-
-<div class="row" 
-
-[@menuFade]="mainState"
-(window:scroll)="clk()"
->
-    <div class="col-sm-2">
-    <logoApp [logo]='logoname.name'></logoApp>
+<div class="containers" [@pageOpacity]="pageNimation" [style.backgroundImage]="headerImageName" [style.backgroundSize.%]="headerImageName==='url(assets/paint.jpg)' ? '90' : '100'">
+    <div class="row" [@menuFade]="mainState" (window:scroll)="clk()">
+        <div class="col-sm-2">
+            <logoApp [logo]='logoname.name'></logoApp>
+        </div>
+        <div class="col-sm-6">
+            <menuApp></menuApp>
+        </div>
+        <div class="col-sm-3" style="margin-top:15px">
+            <signin></signin>
+            <getstart></getstart>
+        </div>
     </div>
-
-    <div class="col-sm-6">
-    <menuApp></menuApp>
-</div>
-<div class="col-sm-3" style="margin-top:15px">
-        <signin></signin>
-        <getstart></getstart>
-       
+    <div [ngClass]="className">
+        <h1>{{pHeader}}</h1>
+        <div>
+            {{pDescription}}
+        </div>
     </div>
 </div>
-<div [ngClass]="className" >
-    <h1>{{pHeader}}</h1>
-    <div>
-       {{pDescription}}
-    </div>
-</div>
-
-</div>
-

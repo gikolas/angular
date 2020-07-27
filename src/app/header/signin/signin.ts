@@ -23,10 +23,7 @@ import { animate, trigger, style, transition, state } from '@angular/animations'
             transition("fadeIn<=>fadeOut", [animate('1.5s')])
         ])
     ]
-
 })
-
-
 
 export class signin {
     showSignUp = false;
@@ -144,8 +141,6 @@ export class signin {
             }
 
             )
-
-
     }
 
     onSubmitUp(e: Event) {

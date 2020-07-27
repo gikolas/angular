@@ -1,39 +1,38 @@
-
-
 .containers {
-width:1500px;
-margin: 0 auto;
+    width: 1500px;
+    margin: 0 auto;
     background: #fff;
- height:500px;
-background-repeat: no-repeat;
-margin-top:-50px;
-
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-top: -50px;
 }
 
-.row{
+.row {
     position: fixed;
     z-index: 100;
-
 }
 
-.rowWhite{
+.rowWhite {
     position: fixed;
     z-index: 100;
-   background: rgb(34, 32, 32);
-
-   width:1500px;
-   margin: 0 auto;
-
+    background: rgb(34, 32, 32);
+    width: 1500px;
+    margin: 0 auto;
 }
 
 .jumbotron {
-    background: none;color:white;text-align: center;
-margin-top:50px
+    background: none;
+    color: white;
+    text-align: center;
+    margin-top: 50px
 }
+
 .jumbotrons {
-    background: none;color:black;text-align: center;
-margin-top:50px;
-padding: 4rem 2rem;
-margin-bottom: 2rem;
-border-radius: .3rem;
+    background: none;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
 }

@@ -1,35 +1,36 @@
-.containers{
-    height:710px;
-margin: 0 auto;
-    width:1500px;
- background-color: rgb(240, 235, 235);
-margin-top:20px;
+.containers {
+    height: 710px;
+    margin: 0 auto;
+    width: 1500px;
+    background-color: rgb(240, 235, 235);
+    margin-top: 20px;
 }
 
-.form-control{
-    width:350px;
-    padding:12px 12px;
-    height:50px;
-    
+.form-control {
+    width: 350px;
+    padding: 12px 12px;
+    height: 50px;
 }
 
 form {
- margin-left:550px
+    margin-left: 550px
 }
 
-h4, p {
+h4,
+p {
     text-align: center
 }
+
 .btn-primary {
-    width:120px;
-height:30px;
-margin-top:12px
+    width: 120px;
+    height: 30px;
+    margin-top: 12px
 }
 
-span{
+span {
     float: right;
-    margin-right:300px;
-    margin-top:30px;
+    margin-right: 300px;
+    margin-top: 30px;
     font-size: 22px;
     color: rgb(14, 66, 119);
     font-weight: bold;

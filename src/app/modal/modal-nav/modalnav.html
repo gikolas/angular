@@ -1,10 +1,5 @@
 <div *ngFor="let trmp of modalNavItems">
-
     <ng-container *ngIf="bltrue">
-        <ng-template
-        [ngTemplateOutlet]="trmp.templateRef"></ng-template>
-    
+        <ng-template [ngTemplateOutlet]="trmp.templateRef"></ng-template>
     </ng-container>
-  
 </div>
-

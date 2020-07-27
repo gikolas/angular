@@ -1,61 +1,45 @@
-<div 
-
-[class.hide]="ModalStatus"
- >
-<div class="myModal">
-    <div class="myModalDiv"
-    [@modalShow]="firstState">
-<div class="myModalHeader">
-<h5>Which product are you interested in?</h5>
-</div>
-<div class="myModalContent">
-        <i class="fa fa-times" (click)="closeModal()"></i>
-    <div class="row">
-
-       
-        <div class="col-sm-3" style="margin-left:25px">
-            <modalnav>
-                <modalnavitem [header]="'Student Loan'">
-            <img src="./assets/get-started-slr.png"/>
-       <h6>Student Loan Refinance</h6>
-       <p>Refinance and consolidate student loans. Get an estimated rate in just 2 minutes.</p>
-       <a href="check/Student"><button class="btn btn-primary">GetYour Rate</button></a>
-    </modalnavitem>
-</modalnav>
-        </div>
-
-
-  
- <div class="col-sm-4" style="margin-left:25px">
-        <modalnav>
-        <modalnavitem [header]="'Personal Loan'">
-                <img src="./assets/get-started-pl.png"/>
-           <h6>Personal Loan</h6>
-           <p>Low interest personal loans for everything from your wedding to home improvements.</p>
-           <a href="check/Personal"> <button class="btn btn-primary">GetYour Rate</button></a>
-        </modalnavitem>
-    </modalnav>
+<div [class.hide]="ModalStatus">
+    <div class="myModal">
+        <div class="myModalDiv" [@modalShow]="firstState">
+            <div class="myModalHeader">
+                <h5>Which product are you interested in?</h5>
             </div>
-     
-
-
-    
-            <div class="col-sm-4" style="margin-left:25px">
-                    <modalnav>
-                    <modalnavitem [header]="'PLUS Loan'">
-                    <img src="./assets/get-started-parent-plus.png"/>
-               <h6>Parent PLUS Refinancing</h6>
-               <p>Personalized payment plans for extra savings. Get an estimated rate in just 2 minutes.</p>
-               <a href="check/Parent PLUS">   <button class="btn btn-primary">GetYour Rate</button></a>
-            </modalnavitem>
-            </modalnav>
-            
+            <div class="myModalContent">
+                <i class="fa fa-times" (click)="closeModal()"></i>
+                <div class="row">
+                    <div class="col-sm-3" style="margin-left:25px">
+                        <modalnav>
+                            <modalnavitem [header]="'Student Loan'">
+                                <img src="./assets/get-started-slr.png" />
+                                <h6>Student Loan Refinance</h6>
+                                <p>Refinance and consolidate student loans. Get an estimated rate in just 2 minutes.</p>
+                                <a href="check/Student"><button class="btn btn-primary">GetYour Rate</button></a>
+                            </modalnavitem>
+                        </modalnav>
+                    </div>
+                    <div class="col-sm-4" style="margin-left:25px">
+                        <modalnav>
+                            <modalnavitem [header]="'Personal Loan'">
+                                <img src="./assets/get-started-pl.png" />
+                                <h6>Personal Loan</h6>
+                                <p>Low interest personal loans for everything from your wedding to home improvements.</p>
+                                <a href="check/Personal"> <button class="btn btn-primary">GetYour Rate</button></a>
+                            </modalnavitem>
+                        </modalnav>
+                    </div>
+                    <div class="col-sm-4" style="margin-left:25px">
+                        <modalnav>
+                            <modalnavitem [header]="'PLUS Loan'">
+                                <img src="./assets/get-started-parent-plus.png" />
+                                <h6>Parent PLUS Refinancing</h6>
+                                <p>Personalized payment plans for extra savings. Get an estimated rate in just 2 minutes.</p>
+                                <a href="check/Parent PLUS"> <button class="btn btn-primary">GetYour Rate</button></a>
+                            </modalnavitem>
+                        </modalnav>
+                    </div>
                 </div>
-           
+            </div>
+        </div>
     </div>
-    </div>
-</div>
-  </div>
-
-  <modalnav></modalnav>
+    <modalnav></modalnav>
 </div>

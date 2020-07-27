@@ -1,19 +1,19 @@
-import {Directive,HostListener,HostBinding} from '@angular/core';
+import { Directive, HostListener, HostBinding } from '@angular/core';
 @Directive({
-    selector :'[getstart]'
+    selector: '[getstart]'
 })
 
-export class getstartDirective{
-@HostBinding('style.color') color ;
-@HostListener('mouseover') onmouseover(){
-    setTimeout(()=>{
-        this.color= "black";
-    },200)
-    
-}
-@HostListener('mouseout') onmouseout(){
-    setTimeout(()=>{
-        this.color= "white";
-    },200)
-}
+export class getstartDirective {
+    @HostBinding('style.color') color;
+    @HostListener('mouseover') onmouseover() {
+        setTimeout(() => {
+            this.color = "black";
+        }, 200)
+
+    }
+    @HostListener('mouseout') onmouseout() {
+        setTimeout(() => {
+            this.color = "white";
+        }, 200)
+    }
 }

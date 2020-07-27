@@ -1,14 +1,14 @@
-import {NgModule} from '@angular/core';
-import {contentClass} from './content';
-import {texts} from './contentHtml/texts';
+import { NgModule } from '@angular/core';
+import { contentClass } from './content';
+import { texts } from './contentHtml/texts';
 import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
-declarations :[contentClass,texts],
-exports:[contentClass,texts],
-imports:[BrowserModule],
+    declarations: [contentClass, texts],
+    exports: [contentClass, texts],
+    imports: [BrowserModule],
 })
 
-export class contentModule{
+export class contentModule {
 
 }

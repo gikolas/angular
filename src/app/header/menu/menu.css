@@ -1,100 +1,89 @@
-
 .navbar-nav {
-    margin-left:0px;
-  z-index: 100;
-
+    margin-left: 0px;
+    z-index: 100;
 }
 
-.navbar-nav  li {
+.navbar-nav li {
     display: inline;
-   margin:12px 12px;
-
+    margin: 12px 12px;
 }
 
-.navbar-nav  li a{
+.navbar-nav li a {
     text-decoration: none;
-    color:white;
+    color: white;
     transition: color 250ms ease;
-  
 }
 
-
-
-
-
-
-.navbar-navs{
+.navbar-navs {
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-  z-index: 100;
-
-
+    z-index: 100;
 }
+
 .navbar-navs li {
     display: inline;
-   margin:12px 12px;
-
+    margin: 12px 12px;
 }
 
-
-
-.navbar-navs li a{
+.navbar-navs li a {
     text-decoration: none;
-    color:black;
+    color: black;
     transition: color 250ms ease;
-  
 }
 
-
-.navbar-nav  li a:hover{
-    color:#7cf0c7
+.navbar-nav li a:hover {
+    color: #7cf0c7
 }
 
-.navbar-navs li a:hover{
-    color:#7cf0c7
+.navbar-navs li a:hover {
+    color: #7cf0c7
 }
 
 .submenu {
     display: none;
     z-index: 10
 }
+
 #submenu {
     position: absolute;
     border: 0px solid black;
-    width:300px;
-background-color: white;
-margin-top:25px;
-box-shadow: 0px 7px 0px 0px rgb(233, 226, 233);
-margin-left:-45px;
-z-index: 10
-
+    width: 300px;
+    background-color: white;
+    margin-top: 25px;
+    box-shadow: 0px 7px 0px 0px rgb(233, 226, 233);
+    margin-left: -45px;
+    z-index: 10
 }
+
 #submenu li {
     display: block;
-  
 }
+
 #submenu li a {
-    color:#6094a0;
-    padding:0;
- margin:0;
-
+    color: #6094a0;
+    padding: 0;
+    margin: 0;
 }
-#submenu li a:hover {color:black;cursor: pointer}
+
+#submenu li a:hover {
+    color: black;
+    cursor: pointer
+}
+
 .menu {
-    width:900px;
-
-    
+    width: 900px;
 }
 
-.hideMyApp{
+.hideMyApp {
     display: none
 }
-.showMyApp{
-    display: block  
+
+.showMyApp {
+    display: block
 }
 
-.actives{
-    color:red
+.actives {
+    color: red
 }

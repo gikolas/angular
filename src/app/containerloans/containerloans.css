@@ -1,21 +1,21 @@
-
-.row{
+.row {
     position: absolute;
-    margin-top:-150px;
+    margin-top: -150px;
 }
-.col-sm-3{
+
+.col-sm-3 {
     background: #fff;
-    padding:12px 12px;
+    padding: 12px 12px;
     box-shadow: 0px 0px 2px 0px rgb(134, 129, 129);
-    margin:12px 12px;
- border-radius:8px;
- width:430px;
-    
+    margin: 12px 12px;
+    border-radius: 8px;
+    width: 430px;
 }
-h3{
+
+h3 {
     color: #4a5155;
     text-align: center;
-    margin-top:25px
+    margin-top: 25px
 }
 
 p {
@@ -27,22 +27,21 @@ p {
     text-align: center
 }
 
-button{
+button {
     border-radius: 2px;
     transition: all .25s;
     box-sizing: border-box;
     height: 44px;
     padding: 10px 25px;
-    border: 1px solid rgba(0,0,0,.15);
+    border: 1px solid rgba(0, 0, 0, .15);
     text-transform: capitalize;
     color: #f9f9fa;
     text-align: center!important;
     background-color: #1bb580;
-    width:90%;
-    margin-left:15px
-  
+    width: 90%;
+    margin-left: 15px
 }
 
-.blockMenu{
-    padding:12px
+.blockMenu {
+    padding: 12px
 }

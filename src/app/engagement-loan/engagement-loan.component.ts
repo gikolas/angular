@@ -1,26 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import {animation,state,trigger,transition,style, animate} from '@angular/animations';
+import { animation, state, trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-engagement-loan',
   templateUrl: './engagement-loan.component.html',
   styleUrls: ['./engagement-loan.component.css'],
-  animations:[
-    trigger('pageOpacity',[
-      state('opacityOn',style({
-        opacity:'0.2'
+  animations: [
+    trigger('pageOpacity', [
+      state('opacityOn', style({
+        opacity: '0.2'
       })),
-      state('opacityOot',style({
-        opacity:'1'
+      state('opacityOot', style({
+        opacity: '1'
       })),
-transition("opacityOn=>opacityOot",[animate('0.5s')])
+      transition("opacityOn=>opacityOot", [animate('0.5s')])
     ])
   ]
 
 })
 export class EngagementLoanComponent implements OnInit {
 
-  pageNimation='opacityOn';
+  pageNimation = 'opacityOn';
   constructor() { }
 
   ngOnInit() {
@@ -29,5 +29,4 @@ export class EngagementLoanComponent implements OnInit {
     }, 2);
 
   }
-
 }

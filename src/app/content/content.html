@@ -1,29 +1,21 @@
 <div class="containers">
     <div class="container">
-    <div class="row">
+        <div class="row">
             <div class="col-sm-5" [style.marginTop.px]="200">
-    <textsApp></textsApp>
-</div>
-    <div
- 
-    class="col-sm-4" 
- [ngStyle]="ContentStyles">
-        
-    </div>
-    </div>
-
-    <div class="row" id="rows">
-            <div class="col-sm-4"
-            [ngStyle]="LoanStyle"></div>
-           <div class="col-sm-5" 
-           [style.marginLeft.px]="250">
-<h3>{{imgUrls.h3}}</h3>
-<div>
-    <p>{{imgUrls.paragraph}}</p>
-</div>
-<a href="#" class="read_more">READ MORE  <i class="fa fa-arrow-circle-right"></i></a>
-           </div>
+                <textsApp></textsApp>
+            </div>
+            <div class="col-sm-4" [ngStyle]="ContentStyles">
+            </div>
+        </div>
+        <div class="row" id="rows">
+            <div class="col-sm-4" [ngStyle]="LoanStyle"></div>
+            <div class="col-sm-5" [style.marginLeft.px]="250">
+                <h3>{{imgUrls.h3}}</h3>
+                <div>
+                    <p>{{imgUrls.paragraph}}</p>
+                </div>
+                <a href="#" class="read_more">READ MORE  <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
     </div>
 </div>
-</div>
-

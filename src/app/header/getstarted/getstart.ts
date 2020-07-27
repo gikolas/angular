@@ -1,16 +1,16 @@
-import {Component} from '@angular/core';
-import {modalService} from '../../modal/modalservice';
+import { Component } from '@angular/core';
+import { modalService } from '../../modal/modalservice';
 @Component({
-selector : 'getstart',
-templateUrl:'./getstart.html',
-styleUrls :['./getstart.css']
+    selector: 'getstart',
+    templateUrl: './getstart.html',
+    styleUrls: ['./getstart.css']
 })
 export class getstart {
-constructor(private modalService:modalService){
+    constructor(private modalService: modalService) {
 
-}
+    }
 
-    showModal(){
-this.modalService.emitCloseButton(false);
+    showModal() {
+        this.modalService.emitCloseButton(false);
     }
 }

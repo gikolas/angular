@@ -1,45 +1,25 @@
 <div class="containers" *ngIf="applicationStatus; else signIn">
-
-  <h4>Create {{LoanType.name}} Application  </h4>
- <form [formGroup]="createApp" (ngSubmit)="onSubmit()">
-   Email : <input type="email" 
-   class="form-control" 
-   formControlName = 'email'
-   >
-    <p class="error" *ngIf="(email.dirty || email.touched) && email.errors?.invalidEmail">Unknown Email</p>
-
-   Amount : <input type="text" class="form-control" formControlName = 'amount' placeholder="Enter Password">
-<p class="error" *ngIf="(amount.dirty || amount.touched) && amount.invalid" >Incorrect Amount</p>
-
-Ccy : <select class="form-control" formControlName = 'ccy'>
-    <option value=""
-    hidden
->Select Ccy</option>
-<option *ngFor="let ccy of Ccy" value="{{ccy}}">{{ccy}}</option>
-
-</select>
-Year : <select class="form-control" formControlName = 'year' >
-    <option value=""
-    hidden
->Select Year</option>
-<option *ngFor="let year of YearNumbers" value="{{year}}">{{year}}</option>
-
-</select>
-Payment Day : <select class="form-control" formControlName = 'paymentDay' >
-    <option value=""
-    hidden
->Select Payment Day 1 ... 12</option>
-  <option *ngFor="let Pday of PdayNumbers" value="{{Pday}}"> {{Pday}}</option>
-  </select>
-<input type="submit" 
-value="Create App" 
-class="btn btn-primary"
-[disabled]="!createApp.valid">
-</form>
+    <h4>Create {{LoanType.name}} Application </h4>
+    <form [formGroup]="createApp" (ngSubmit)="onSubmit()">
+        Email : <input type="email" class="form-control" formControlName='email'>
+        <p class="error" *ngIf="(email.dirty || email.touched) && email.errors?.invalidEmail">Unknown Email</p>
+        Amount : <input type="text" class="form-control" formControlName='amount' placeholder="Enter Password">
+        <p class="error" *ngIf="(amount.dirty || amount.touched) && amount.invalid">Incorrect Amount</p>
+        Ccy : <select class="form-control" formControlName='ccy'>
+                     <option value="" hidden>Select Ccy</option>
+                     <option *ngFor="let ccy of Ccy" value="{{ccy}}">{{ccy}}</option>
+             </select> Year : <select class="form-control" formControlName='year'>
+                         <option value="" hidden> Select Year </option>
+                         <option *ngFor="let year of YearNumbers" value="{{year}}">{{year}}</option>
+              </select> Payment Day : <select class="form-control" formControlName='paymentDay'>
+           <option value="" hidden> Select Payment Day 1 ... 12</option>
+           <option *ngFor="let Pday of PdayNumbers" value="{{Pday}}"> {{Pday}}</option>
+          </select>
+        <input type="submit" value="Create App" class="btn btn-primary" [disabled]="!createApp.valid">
+    </form>
 </div>
 <ng-template #signIn>
     <div class="containersSignIn">
-      <h3>Please Sign In!</h3>
+        <h3>Please Sign In!</h3>
     </div>
-  
 </ng-template>
