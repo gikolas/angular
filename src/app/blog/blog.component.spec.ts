@@ -17,4 +17,20 @@ describe('BlogComponent', () => {
     fixture.detectChanges();
     expect(component).toBeTruthy();
   });
+
+  it('shoult animation is On', () => {
+    const fixture = TestBed.createComponent(BlogComponent);
+    const component = fixture.componentInstance;
+    fixture.detectChanges();
+    expect(component.pageNimation).toEqual('opacityOn')
+  })
+
+  it('shoult animation is Out', async(() => {
+    const fixture = TestBed.createComponent(BlogComponent);
+    const component = fixture.componentInstance;
+    fixture.detectChanges();
+    fixture.whenStable().then(() => {
+      expect(component.pageNimation).toBe('opacityOot')
+    })
+  }))
 });
