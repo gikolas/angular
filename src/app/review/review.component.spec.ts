@@ -2,24 +2,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ReviewComponent } from './review.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 describe('ReviewComponent', () => {
-  let component: ReviewComponent;
-  let fixture: ComponentFixture<ReviewComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ReviewComponent ]
-    })
-    .compileComponents();
-  }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReviewComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    TestBed.configureTestingModule({
+      declarations: [ ReviewComponent ],
+      imports: [BrowserAnimationsModule]
+    })
   });
 
   it('should create', () => {
+    const fixture = TestBed.createComponent(ReviewComponent);
+    const component = fixture.componentInstance;
+    fixture.detectChanges();
     expect(component).toBeTruthy();
   });
-});
+})
+

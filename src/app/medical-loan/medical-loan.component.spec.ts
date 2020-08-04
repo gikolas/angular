@@ -2,24 +2,20 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MedicalLoanComponent } from './medical-loan.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 describe('MedicalLoanComponent', () => {
-  let component: MedicalLoanComponent;
-  let fixture: ComponentFixture<MedicalLoanComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ MedicalLoanComponent ]
-    })
-    .compileComponents();
-  }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MedicalLoanComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    TestBed.configureTestingModule({
+      declarations: [ MedicalLoanComponent ],
+      imports: [BrowserAnimationsModule]
+    })
   });
 
   it('should create', () => {
+    const fixture = TestBed.createComponent(MedicalLoanComponent);
+    const component = fixture.componentInstance;
+    fixture.detectChanges();
     expect(component).toBeTruthy();
   });
-});
+})

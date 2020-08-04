@@ -1,31 +1,29 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {headerModule} from './header/headermodule';
+import { CommonModule } from '@angular/common';
+import {RouterModule, Router} from '@angular/router';
+import { modalModule } from './modal/modalmodule';
+import {firebaseService} from './firebase/firebase.service';
+import {HttpClientModule, HttpClient, HttpHandler} from '@angular/common/http';
+import {services} from './services';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+
+  beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
-  }));
-
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+      declarations: [ AppComponent ],
+      imports: [CommonModule, RouterModule, modalModule, headerModule, RouterTestingModule],
+      
+      providers: [ HttpClientModule, HttpClient,HttpHandler, firebaseService, services]
+    })
   });
 
-  it(`should have as title 'micro'`, () => {
+  it('should create', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('micro');
-  });
-
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const component = fixture.componentInstance;
     fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to micro!');
+    expect(component).toBeTruthy();
   });
-});
+})
